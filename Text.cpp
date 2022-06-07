@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20200926
- * @date updated: 20211025
+ * @date updated: 20220607; from 20211025
  * @website address: http://www.usbong.ph
  *
  * Reference:
@@ -703,13 +703,26 @@ void Text::drawTextBackgroundAsQuadWithTexture()
     
    	//added by Mike, 20210907
 		if (isAtMaxTextCharRow) {
-		
+	
+/*		//edited by Mike, 20220607	
         if ((idrawPressNextSymbolCount)%2==0) {
         		//added by Mike, 20211004
         		//TO-DO: -reverify: this
             drawPressNextSymbol();
         }
         idrawPressNextSymbolCount=idrawPressNextSymbolCount+1;
+*/        
+		//reference: USBONG TUGON
+		if (idrawPressNextSymbolCount<10) {//5) {
+			drawPressNextSymbol();		
+		}
+		else {
+			if (idrawPressNextSymbolCount>20) {//10) {
+				idrawPressNextSymbolCount=0;
+			}
+		}			
+		idrawPressNextSymbolCount=idrawPressNextSymbolCount+1;
+
 	 //removed by Mike, 20211004   	
     }              	
 
