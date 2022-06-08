@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B. 
  * @date created: 20200930
- * @date updated: 20211106
+ * @date updated: 20220608; from 20211106
  * @website address: http://www.usbong.ph
  *
  * Acknowledgments:
@@ -510,6 +510,7 @@ public:
     virtual void draw() {
 		//edited by Mike, 20210424
 //    	drawPilot();
+
 		drawPilotAsQuadWithTexture();
     }
 

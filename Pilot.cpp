@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B. 
  * @date created: 20200930
- * @date updated: 20220607; from 20220606
+ * @date updated: 20220608; from 20220607
  * @website address: http://www.usbong.ph
  *
  * Reference: 
@@ -397,6 +397,9 @@ Pilot::Pilot(float xPos, float yPos, float zPos, float fWindowWidth, float fWind
 	
 	fCountTotalFrames=4.0f; //added by Mike, 20210903
 	
+	//added by Mike, 20220608
+	idrawAnimationFrameCount=0;
+	
 	//added by Mike, 20210810
 	iShieldEffectCount=0;
 	iGlowEffectCount=0;
@@ -762,9 +765,32 @@ void Pilot::drawPilotAsQuadWithTexture()
                         						fTaoAnimationFrameOffset=iCountTaoAnimationFrame*0.25;
                        						
 							
+							//edited by Mike, 20220608
+							//TO-DO: -add: in update()
+/*							
 						//	printf("iCountTaoAnimationFrame: %i",iCountTaoAnimationFrame);
 							iCountTaoAnimationFrame=iCountTaoAnimationFrame+1;		
 							//printf("iTaoAnimationFrameOffset: %i",iTaoAnimationFrameOffset);
+*/
+
+		//reference: USBONG TUGON
+/*		
+		if (idrawAnimationFrameCount<10) {//5) {
+			iCountTaoAnimationFrame=iCountTaoAnimationFrame+1;		
+		}
+		else {
+			if (idrawAnimationFrameCount>20) {//10) {
+				idrawAnimationFrameCount=0;
+			}
+		}			
+		idrawAnimationFrameCount=idrawAnimationFrameCount+1;
+*/
+/*	//removed to update() by Mike, 20220608
+		if ((idrawAnimationFrameCount)%2==0) {
+			iCountTaoAnimationFrame=iCountTaoAnimationFrame+1;		
+		}
+		idrawAnimationFrameCount=idrawAnimationFrameCount+1;
+*/
 
 												//edited by Mike, 20210901																		
 //              					fTaoAnimationFrameOffsetYAxis=0.75f; //added by Mike, 20210611
@@ -2802,6 +2828,25 @@ void Pilot::update(float dt)
     {
            case INITIALIZING_STATE:
            case MOVING_STATE:   
+           
+         //added by Mike, 20220608
+         //reference: USBONG TUGON
+/*		
+		if (idrawAnimationFrameCount<10) {//5) {
+			iCountTaoAnimationFrame=iCountTaoAnimationFrame+1;		
+		}
+		else {
+			if (idrawAnimationFrameCount>20) {//10) {
+				idrawAnimationFrameCount=0;
+			}
+		}			
+		idrawAnimationFrameCount=idrawAnimationFrameCount+1;
+*/
+		if ((idrawAnimationFrameCount)%2==0) {
+			iCountTaoAnimationFrame=iCountTaoAnimationFrame+1;		
+		}
+		idrawAnimationFrameCount=idrawAnimationFrameCount+1;
+		
            //removed by Mike, 20210807
 /*              
 				switch(currentMovingState) {

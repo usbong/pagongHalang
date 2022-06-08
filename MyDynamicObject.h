@@ -243,6 +243,10 @@ public:
 		
 		//added by Mike, 20210903
 		float fCountTotalFrames;
+		
+	//added by Mike, 20220608
+	int idrawAnimationFrameCount;
+		
     
     //added by Mike, 20210725
     Level2D *myLevel2D;

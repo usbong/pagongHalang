@@ -1,5 +1,5 @@
 /*
- * Copyright 2020~2021 SYSON, MICHAEL B.
+ * Copyright 2020~2022 SYSON, MICHAEL B.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20200926
- * @date updated: 20220607; from 20211025
+ * @date updated: 20220608; from 20220607
  * @website address: http://www.usbong.ph
  *
  * Reference:
@@ -712,6 +712,7 @@ void Text::drawTextBackgroundAsQuadWithTexture()
         }
         idrawPressNextSymbolCount=idrawPressNextSymbolCount+1;
 */        
+
 		//reference: USBONG TUGON
 		if (idrawPressNextSymbolCount<10) {//5) {
 			drawPressNextSymbol();		
