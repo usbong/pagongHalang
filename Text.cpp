@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20200926
- * @date updated: 20220608; from 20220607
+ * @date updated: 20220614; from 20220608
  * @website address: http://www.usbong.ph
  *
  * Reference:
@@ -1006,12 +1006,42 @@ for (iRowCount=0; iRowCount<iTextCurrentMaxRowCount;) {
   iTextAnimationCountDelay=0;
   
   if ((iRowCount)==(iTextCurrentMaxRowCount-1)) {
+      
+/* //edited by Mike, 20220614      
       iCurrentMaxColumnCountPerRowContainer[iRowCount]++;
       
       //added by Mike, 20210617
       if (iCurrentMaxColumnCountPerRowContainer[iRowCount]>=MAX_TEXT_CHAR_COLUMN) {
           iCurrentMaxColumnCountPerRowContainer[iRowCount]=MAX_TEXT_CHAR_COLUMN;
       }
+*/      
+      
+      
+      
+      
+    //added by Mike, 20220614  
+	//TO-DO: -add: as settings, function to adjust text draw speed 
+	//add: HOLD button to speed-up?
+	//TO-DO: -add: narration voice-over
+	if(idrawTextWithFontTextureCount%4==0) { //5//10//20//40//30
+		if (iRowCount<MAX_TEXT_CHAR_ROW) {
+			//edited by Mike, 20220318
+  			//iCurrentMaxColumnCountPerRowContainer[iRowCountPartTwo]++;
+
+			if (iCurrentMaxColumnCountPerRowContainer[iRowCount]<MAX_TEXT_CHAR_COLUMN) {
+  				iCurrentMaxColumnCountPerRowContainer[iRowCount]++;
+			}
+		}
+	}
+    idrawTextWithFontTextureCount=idrawTextWithFontTextureCount+1;
+
+      
+    //added by Mike, 20210617
+    if (iCurrentMaxColumnCountPerRowContainer[iRowCount]>=MAX_TEXT_CHAR_COLUMN) {
+        iCurrentMaxColumnCountPerRowContainer[iRowCount]=MAX_TEXT_CHAR_COLUMN;
+    }
+    
+      
   }
         
         

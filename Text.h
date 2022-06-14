@@ -1,5 +1,5 @@
 /*
- * Copyright 2020~2021 SYSON, MICHAEL B.
+ * Copyright 2020~2022 SYSON, MICHAEL B.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -15,7 +15,7 @@
  * @company: USBONG
  * @author: SYSON, MICHAEL B.
  * @date created: 20210613
- * @date updated: 20211006
+ * @date updated: 20220614; from 20211006
  * @website address: http://www.usbong.ph
  *
  * Acknowledgments:
@@ -208,6 +208,9 @@ private:
     int iTextAnimationCount,
     iTextAnimationCountDelay,
     iTextCurrentMaxColumnCount;
+
+	//added by Mike, 20220614
+	int idrawTextWithFontTextureCount;
        
     //added by Mike, 20201201
     char legStates[2];
