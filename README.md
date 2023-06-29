@@ -35,7 +35,10 @@ Library: set of reusable instructions
 https://www.libsdl.org/download-2.0.php; last accessed: 20210922<br/>
 --> <b>Recommendation:</b> Reuse Image Compression instructions, e.g. loading .png image files<br/>
 --> https://www.libsdl.org/projects/SDL_mixer/release/; last accessed: 20230629<br/>
---> version: SDL Mixer 2.0.4
+--> version: SDL Mixer 2.0.4<br/>
+
+<img src="https://github.com/usbong/pagongHalang/blob/main/notes/usbongUpdateFileLocationsSDLLibraryNotesV20230629T1520.png" width="100%">
+
 
 ## 3.2. Open Graphics Library (OpenGL)
 https://www.opengl.org/; last accessed: 20210922<br/>
