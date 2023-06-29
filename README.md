@@ -22,7 +22,8 @@ Continue to increase know-how to build Electronic Book Readers with Human-Comput
 TO-DO: -update: image animation file 
 
 # 2. Additional References
-## 2.1. [Usbong Pagong](https://github.com/usbong/pagong)
+## 2.1. [Usbong Pagong](https://github.com/usbong/pagong)<br/>
+--> Super Mario Story 64; Spritesheet<br/>
 
 ## 2.2. Web Service: Math is Fun
 ### Example: https://www.mathsisfun.com/algebra/sohcahtoa.html; last accessed: 20210922
@@ -30,9 +31,11 @@ TO-DO: -update: image animation file
 # 3. Library Requirements
 Library: set of reusable instructions
 
-## 3.1. Simple Directmedia Layer (SDL): SDL version 2.0 & SDL Image
+## 3.1. Simple Directmedia Layer (SDL): SDL version 2.0, SDL Image, SDL Mixer<br/>
 https://www.libsdl.org/download-2.0.php; last accessed: 20210922<br/>
---> <b>Recommendation:</b> Reuse Image Compression instructions, e.g. loading .png image files  
+--> <b>Recommendation:</b> Reuse Image Compression instructions, e.g. loading .png image files<br/>
+--> https://www.libsdl.org/projects/SDL_mixer/release/; last accessed: 20230629<br/>
+--> version: SDL Mixer 2.0.4
 
 ## 3.2. Open Graphics Library (OpenGL)
 https://www.opengl.org/; last accessed: 20210922<br/>
@@ -61,7 +64,7 @@ edited by: Amir, 20180425T1940<br/>
 --> <b>Note:</b> Quick Single-layered Image Editing Tool
 
 # 5. Open Source Software License
-Copyright 2021~2022 SYSON, MICHAEL B.
+Copyright 2021~2023 SYSON, MICHAEL B.
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
