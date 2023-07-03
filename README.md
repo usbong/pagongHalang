@@ -40,6 +40,44 @@ https://www.libsdl.org/download-2.0.php; last accessed: 20210922<br/>
 <img src="https://github.com/usbong/pagongHalang/blob/main/notes/usbongUpdateFileLocationsSDLLibraryNotesV20230629T1520.png" width="100%">
 
 
+### Note: OS 32-bit system instructions; update to use 64-bit
+
+DevCPP
+
+Project -> Project Options -> Parameters
+
+"C:/Program Files/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32/libopengl32.a"
+
+"C:/Program Files/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32/libglu32.a"
+
+"C:/Program Files/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32/libglut32.a"
+
+"C:/Usbong/SDL2-2.0.12/lib/x86/SDL2.dll"
+
+"C:/Usbong/SDL2_image-2.0.5/lib/x86/SDL2_image.dll"
+
+"C:/Program Files/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32/libgdi32.a"
+
+C:/Usbong/SDL2_mixer-2.0.4/lib/x86/SDL2_mixer.dll
+
+C:/Usbong/SDL2_mixer-2.0.4/lib/x86/libFLAC-8.dll
+
+C:/Usbong/SDL2_mixer-2.0.4/lib/x86/libmodplug-1.dll
+
+C:/Usbong/SDL2_mixer-2.0.4/lib/x86/libmpg123-0.dll
+
+C:/Usbong/SDL2_mixer-2.0.4/lib/x86/libogg-0.dll
+
+C:/Usbong/SDL2_mixer-2.0.4/lib/x86/libopus-0.dll
+
+C:/Usbong/SDL2_mixer-2.0.4/lib/x86/libopusfile-0.dll
+
+C:/Usbong/SDL2_mixer-2.0.4/lib/x86/libvorbis-0.dll
+
+C:/Usbong/SDL2_mixer-2.0.4/lib/x86/libvorbisfile-3.dll
+
+
+
 ## 3.2. Open Graphics Library (OpenGL)
 https://www.opengl.org/; last accessed: 20210922<br/>
 --> <b>Recommendation:</b> Not to add OpenGL instructions for computer machines with classification:<br/> 
