@@ -76,6 +76,15 @@ C:/Usbong/SDL2_mixer-2.0.4/lib/x86/libvorbis-0.dll
 
 C:/Usbong/SDL2_mixer-2.0.4/lib/x86/libvorbisfile-3.dll
 
+## -- 
+
+https://stackoverflow.com/questions/17988904/compile-64-bit-binary-with-mingw-dev-c; last accessed: 20230706
+
+> Dev-C++ setup bundled with mingw 64-bit compiler under Orwell Dev-C++'s download section. Make sure you choose "TDM-GCC x64 4.7.1" either setup or portable.
+
+http://orwelldevcpp.blogspot.com/; last accessed: 20230706
+
+DEV CPP
 
 
 ## 3.2. Open Graphics Library (OpenGL)
